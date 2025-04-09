@@ -5,7 +5,7 @@ SoftwareSerial bluetooth(BT_RXD, BT_TXD);  // 블루투스 설정 BTSerial(Tx, R
 void setup() {
   Serial.begin(9600);
   bluetooth.begin(9600);                   // 블루투스 통신 시작
-  bluetooth.println("블루투스 모듈에 연결합니다.");
+  //bluetooth.println("블루투스 모듈에 연결합니다.");
 }
 void loop() {
   if (bluetooth.available()) {             // 블루투스에서 보낸 내용은 시리얼모니터로 전송
